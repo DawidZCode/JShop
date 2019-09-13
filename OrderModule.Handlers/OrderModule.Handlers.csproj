@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Infrastructure\Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\OrderModule.Contracts\OrderModule.Contracts.csproj" />
+    <ProjectReference Include="..\OrderModule.Database\OrderModule.Database.csproj" />
+    <ProjectReference Include="..\OrderModule.Domain\OrderModule.Domain.csproj" />
+    <ProjectReference Include="..\PaymentModule.Comtracts\PaymentModule.Comtracts.csproj" />
+    <ProjectReference Include="..\ProductsModule.Contracts\ProductsModule.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
